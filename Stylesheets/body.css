@@ -1,10 +1,42 @@
+html,
 body {
-  height: 100%;
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
 }
 
 .body-text {
   text-align: left;
   width: 70%;
   margin: 150px auto;
+}
+
+.portfolio-image {
+  height: 200px;
+  width: 350px;
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio-image:hover {
+  position: relative;
+  top: -5px;
+}
+
+.portfolio-card {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 2px 2px -2px gray;
+}
+
+.language {
+  height: 30px;
+  margin-right: 10px;
 }
 
