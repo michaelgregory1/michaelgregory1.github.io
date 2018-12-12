@@ -1,0 +1,10 @@
+body {
+  height: 100%;
+}
+
+.body-text {
+  text-align: left;
+  width: 70%;
+  margin: 150px auto;
+}
+
