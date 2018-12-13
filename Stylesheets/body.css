@@ -1,13 +1,8 @@
-html,
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-}
-#container {
+
+/*#container {
    min-height:100%;
    position:relative;
-}
+}*/
 
 .body-text {
   text-align: left;
@@ -16,20 +11,16 @@ body {
 }
 
 .portfolio-image {
-  height: 200px;
   width: 350px;
+  min-width: 200px;
   box-shadow: 1px 1px 1px grey;
   border-radius: 2px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.portfolio-image:hover {
-  position: relative;
-  top: -5px;
-}
-
 .portfolio-card {
+  margin: ;
   margin-top: 50px;
   padding-bottom: 50px;
   box-shadow: 0 2px 2px -2px gray;
@@ -40,3 +31,22 @@ body {
   margin-right: 10px;
 }
 
+h1 {
+  font-family: 'Rubik', sans-serif !important;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.project {
+  text-decoration: none !important;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.project:hover {
+  text-decoration: none !important;
+  color: orange;
+}
