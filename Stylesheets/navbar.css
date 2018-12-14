@@ -1,6 +1,5 @@
 .navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: transparent;
   transition: all 0.3s ease;
   height: 70px;
   padding: 0px 30px;
@@ -27,16 +26,20 @@
 
 .navbar-wagon-item {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0px;
 }
 
 .navbar-wagon-link {
-  color: #616668;
+  color: white;
   font-size: 14px;
+  margin-left: 40px;
+  padding: 0px 5px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: white;
   text-decoration: none;
+  box-shadow: 0 3px 2px -2px white;
+  transition: box-shadow 0.4s ease-in-out;
 }
 
 .navbar-wagon-dropdown-menu {

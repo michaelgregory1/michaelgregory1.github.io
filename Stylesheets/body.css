@@ -1,13 +1,14 @@
 
-/*#container {
+#container {
    min-height:100%;
    position:relative;
-}*/
+}
 
 .body-text {
   text-align: left;
   width: 70%;
   margin: 150px auto;
+  z-index: 5;
 }
 
 .portfolio-image {
@@ -33,20 +34,33 @@
 
 h1 {
   font-family: 'Rubik', sans-serif !important;
+  color: white !important;
 }
 
 h3 {
   font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .project {
   text-decoration: none !important;
-  color: black;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
 }
 
 .project:hover {
   text-decoration: none !important;
-  color: orange;
+  color: white;
+  box-shadow: 0 3px 2px -2px white;
+  transition: box-shadow 0.4s ease-in-out;
 }
+
+#fronth3 {
+  color: white;
+}
+
