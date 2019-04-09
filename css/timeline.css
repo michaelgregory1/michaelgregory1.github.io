@@ -1,0 +1,202 @@
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  /* INTRO SECTION */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+
+.intro-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  text-align: center;
+  color: white;
+}
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  text-align:left;
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline__box {
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  padding: 15px;
+  background: #eeeeee;
+  color: #5b6f7c;
+}
+
+.timeline__box::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline__box-content {
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #eeeeee transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #eeeeee;
+}
+
+.timeline__box-date {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline__img {
+  height: 170px;
+}
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #5893f4;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+
+/* Arrow Bounce
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    .bounce {
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+      animation-name: bounce-7;
+      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    }
+    @keyframes bounce-7 {
+        0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-40px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+    }
