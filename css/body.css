@@ -6,32 +6,24 @@
 
 .body-text {
   text-align: left;
-  width: 70%;
-  margin: 100px auto 80px auto;
+  padding: 100px;
   z-index: 5;
   color: white;
+  min-height: calc(100vh - 130px);
 }
 
-.portfolio-image {
-  width: 350px;
-  min-width: 200px;
-  box-shadow: 1px 1px 1px grey;
-  border-radius: 2px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.index-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 100px;
+  z-index: 5;
+  color: white;
+  min-height: calc(100vh - 130px);
 }
 
-.portfolio-card {
-  margin: ;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 0 2px 2px -2px gray;
-}
-
-.language {
-  height: 30px;
-  margin-right: 10px;
-}
 
 h1 {
   font-family: 'Rubik', sans-serif !important;
@@ -41,24 +33,6 @@ h1 {
 h3 {
   font-family: 'Roboto', sans-serif;
   color: white;
-}
-
-h6 {
-  color: white !important;
-}
-
-.project {
-  text-decoration: none !important;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-}
-
-.project:hover {
-  text-decoration: none !important;
-  color: white;
-  box-shadow: 0 3px 2px -2px white;
-  transition: box-shadow 0.4s ease-in-out;
 }
 
 #fronth3 {

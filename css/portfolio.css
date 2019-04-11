@@ -1,0 +1,90 @@
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio-image {
+  object-fit: cover;
+  width: 100%;
+  height: 174px;
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 2px;
+}
+
+.portfolio-card {
+  display: grid;
+  grid-template-rows: 60px auto auto;
+  box-shadow: 0 2px 2px -2px gray;
+  color: white;
+  background-color: rgba(238, 238, 238, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.language {
+  height: 30px;
+  margin-right: 10px;
+  color: #5b6f7c;
+}
+
+.info-container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 176.45px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #324157;
+  border-radius: 2px;
+}
+
+.info-container:hover .overlay {
+  opacity: 1;
+}
+
+.project {
+  text-decoration: none !important;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.project:hover{
+  color: white;
+}
+
+.text {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.text:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.technology {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
