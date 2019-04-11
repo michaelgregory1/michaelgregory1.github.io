@@ -7,7 +7,7 @@
 .body-text {
   text-align: left;
   width: 70%;
-  margin: 150px auto;
+  margin: 100px auto 80px auto;
   z-index: 5;
   color: white;
 }
